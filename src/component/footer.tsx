@@ -59,7 +59,7 @@ export default function Footer() {
   return (
     <footer className="px-5 pt-6 xl:px-20 2xl:px-28 font-sans">
       <section className="pt-11 px-8 pb-8 max-w-[75.5rem] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-7 lg:gap-10 xl:gap-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-7 lg:gap-10 xl:gap-14">
           {cols.map((col, idx) => {
             return (
               <div key={col.header} className="">
@@ -94,7 +94,7 @@ export default function Footer() {
                       href={col.extra.href}
                       className={`text-white ${idx == 2 ? "underline" : ""}`}
                     >
-                      {col.extra.name}{" "}
+                      {col.extra.name}
                     </Link>
 
                     <Icons.arrowRight />
